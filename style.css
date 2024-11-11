@@ -1,0 +1,44 @@
+@font-face{
+    font-family:inter-bold;
+    src:url(assets/fonts/static/Inter-Bold.ttf);
+} 
+
+@font-face{
+    font-family:inter-regular;
+    src:url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+
+@font-face{
+    font-family:inter-semibold;
+    src:url(assets\fonts\static\Inter-SemiBold.ttf);
+}
+
+@font-face{
+    font-family:inter-variable;
+    src:url(assets\fonts\Inter-VariableFont_slnt,wght.ttf);
+}
+
+
+
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);;
+    --White: hsl(0, 0%, 100%);
+    --Grey_700: hsl(0, 0%, 20%);
+    --Grey_800: hsl(0, 0%, 12%);
+    --Grey_900: hsl(0, 0%, 8%);
+    --Font_iBold: "inter-bold";
+    --Font_iregular: "inter-regular";
+    --Font_isemibold: "inter-semibold";
+    --Font_ivariable: "inter-variable";
+}
+
+h1{
+    font-family: var(--Font_iBold);
+}
