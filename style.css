@@ -33,12 +33,6 @@ body{
     
 }
 
-
-
-
-
-
-
 p{
     font-size:0.8710rem;
     font-family: var(--Font_iregular);
@@ -90,7 +84,7 @@ h2{
 
 button{
     width:100%;
-    margin-bottom:10px;
+    margin-bottom:17px;
     background-color:var(--Grey_700);
     border: none;
     padding:13px 10px;
@@ -103,6 +97,15 @@ button{
 button:hover{
     background-color: var(--Green);
     color:black;
+}
+
+@media only screen and (max-width: 375px) {
+    .center-page {
+      /* Specific styles for 375px screens */
+      width: 90%; /* Adjust the width as needed */
+      margin: 0 auto;
+      /* Other specific styles for smaller screens */
+    }
 }
 
 
