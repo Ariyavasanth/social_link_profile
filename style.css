@@ -1,31 +1,13 @@
-@font-face{
-    font-family:inter-bold;
-    src:url(assets/fonts/static/Inter-Bold.ttf);
-} 
-
-@font-face{
-    font-family:inter-regular;
-    src:url(assets/fonts/static/Inter-Bold.ttf);
-}
-
-
-@font-face{
-    font-family:inter-semibold;
-    src:url(assets\fonts\static\Inter-SemiBold.ttf);
-}
-
-@font-face{
-    font-family:inter-variable;
-    src:url(assets\fonts\Inter-VariableFont_slnt,wght.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 
 *{
     padding:0px;
     margin:0px;
+    
 }
+
 
 :root{
     --Green: hsl(75, 94%, 57%);;
@@ -33,12 +15,96 @@
     --Grey_700: hsl(0, 0%, 20%);
     --Grey_800: hsl(0, 0%, 12%);
     --Grey_900: hsl(0, 0%, 8%);
-    --Font_iBold: "inter-bold";
-    --Font_iregular: "inter-regular";
-    --Font_isemibold: "inter-semibold";
-    --Font_ivariable: "inter-variable";
+    /* --Font_iBold: "inter-bold"; */
+    --Font_iregular:  "Inter", serif;
+    --Font_weight400:400;
+    --Font_weight600:600;
+    --FOnt_weight700:700;
 }
 
-h1{
-    font-family: var(--Font_iBold);
+body{
+    background-color:var(--Grey_900);
+    color:rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+  
+    
 }
+
+
+
+
+
+
+
+p{
+    font-size:0.8710rem;
+    font-family: var(--Font_iregular);
+}
+
+.center-page{
+    display:flex;
+    flex-direction:column;
+    background-color: var(--Grey_800);
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    width:18.900rem;
+    border-radius:0.6250rem;
+}
+
+
+.avatar{
+    width:6rem;
+    margin:1rem;
+}
+.avatar img{
+    border-radius: 50%;
+    width:100%;
+}
+
+h2{
+    font-family: var(--Font_iregular);
+    color:var(--White);
+    font-weight:var(--Font_weight600);
+    margin-bottom: 0.50rem;
+}
+
+.caption_1{
+    margin-bottom: 1.100rem;
+    font-family:var(--Font_iregular);
+    font-weight:600;
+    color:var(--Green);
+}
+
+.social-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+    
+    
+}
+
+button{
+    width:100%;
+    margin-bottom:10px;
+    background-color:var(--Grey_700);
+    border: none;
+    padding:13px 10px;
+    color:var(--White);
+    font-weight: var(--Font_weight600);
+    border-radius: 0.6250rem;
+    transition: all 0.5 ease;
+}
+
+button:hover{
+    background-color: var(--Green);
+    color:black;
+}
+
+
+
+
